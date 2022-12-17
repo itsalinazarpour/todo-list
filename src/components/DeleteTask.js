@@ -18,11 +18,11 @@ function DeleteAllTask({ deleteTaskAll }) {
   return (
     <>
       <Button
-        // colorScheme='red'
-        px='8'
-        h='45'
-        color='red.500'
-        mt='8'
+        // colorScheme="red"
+        px="8"
+        h="45"
+        color="red.500"
+        mt="8"
         onClick={onOpen}
       >
         Delete All
@@ -30,13 +30,13 @@ function DeleteAllTask({ deleteTaskAll }) {
 
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent w='90%'>
+        <ModalContent w="90%">
           <ModalHeader>Do you really want to delete all tasks?</ModalHeader>
           <ModalFooter>
             <Button mr={3} onClick={onClose}>
               No
             </Button>
-            <Button colorScheme='red' onClick={() => deleteTaskAll()}>
+            <Button colorScheme="red" onClick={() => deleteTaskAll()}>
               Yes
             </Button>
           </ModalFooter>
@@ -51,11 +51,11 @@ function DeleteTask({ task, deleteTask }) {
 
   return (
     <>
-      <IconButton icon={<FiTrash2 />} isRound='true' onClick={onOpen} />
+      <IconButton icon={<FiTrash2 />} isRound="true" onClick={onOpen} />
 
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent w='90%'>
+        <ModalContent w="90%">
           <ModalHeader>Do you really want to delete the task?</ModalHeader>
           <ModalBody>
             <Text>{task.body}</Text>
@@ -65,7 +65,7 @@ function DeleteTask({ task, deleteTask }) {
               No
             </Button>
             <Button
-              colorScheme='red'
+              colorScheme="red"
               onClick={() => deleteTask(task.id, onClose)}
             >
               Yes
