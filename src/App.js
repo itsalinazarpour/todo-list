@@ -93,7 +93,7 @@ function App() {
         bgGradient="linear(to-r, red.500, yellow.500)"
         bgClip="text"
       >
-        Todo list
+        Todo List
       </Heading>
       <AddTask addTask={addTask} />
       <TaskList
